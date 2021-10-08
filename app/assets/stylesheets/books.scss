@@ -9,7 +9,7 @@
 }
 
 
-body {
+body, p {
   margin:33px;
   font-size: 13px;
   line-height: 18px;
@@ -34,12 +34,6 @@ div.field, div.actions {
   margin-bottom: 18px;
 }
 
-p {
-  font-size: 13px;
-  line-height: 18px;
-  margin:33px;
-}
-
 a {
   color: #000;
 }
@@ -48,3 +42,5 @@ a:hover {
 color:#fff;
 background-color: #000;
 }
+
+
