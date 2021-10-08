@@ -1,4 +1,28 @@
 <h1 class="title">Editing Book</h1>
+
+<% if @book.errors.any? %>
+    <div id="error_explanation">
+   
+      <h2><%= @book.errors.count %>error prohibited this book from being saved:</h2>
+      <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    
+      <ul>
+        <li>
+          ::marker
+          "Title can't be blank"
+        </li>
+        <li>
+          ::marker
+          "Body can't be blank"
+        </li>
+      </ul>
+    </div>
+  <% end %>
+
 <%= form_with model:@book, local: true do |f| %>
   <h4>Title</h4>
   <div class="field">
